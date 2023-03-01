@@ -1,0 +1,12 @@
+<div class="loginClass" [formGroup]="loginForm">
+  <div class="user">
+    <label for="username">Username: </label>
+    <input id="username" type="text" formControlName="username" />
+  </div>
+
+  <div class="pwd">
+    <label for="password">Password: </label>
+    <input id="password" type="password" formControlName="password" />
+  </div>
+  <button (click)="displayProducts()" [disabled]="!loginForm.valid">Log In</button>
+</div>

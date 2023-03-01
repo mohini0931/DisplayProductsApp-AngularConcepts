@@ -1,0 +1,46 @@
+.registerClass {
+  margin: 5rem;
+  border: 1px solid rgb(224, 206, 206);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background: rgb(182 177 221);
+  margin-top: 2rem;
+  font-size: 5rem;
+  /* flex-wrap: */
+  height: 80vh;
+}
+.registerClass div {
+    padding:25px 25px 0;
+	margin: 20px 20px 0;	
+	border-radius: 3px;
+}
+
+.registerClass input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 3.4rem;
+}
+.emailClass{
+    width: 62rem;
+}
+.registerClass label {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+
+  padding: 1rem;
+}
+.registerClass button {
+  background: white;
+  width: 20%;
+  padding: 1.5rem;
+  color: black;
+  cursor: pointer;
+  /* margin-left: 1.5rem; */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 6rem;
+}

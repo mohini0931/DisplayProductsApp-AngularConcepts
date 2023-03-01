@@ -1,0 +1,41 @@
+.mainContainer {
+    background: rgb(219, 198, 223);
+    /* height: 50rem;
+    width: 50rem; */
+    height: 100vh;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .menu {
+    background: rgb(163, 156, 222);
+  }
+  .iconClass {
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+  }
+  .submenu {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .submenu li {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .submenu a {
+    color: black;
+  }
+  .activebutton {
+    box-shadow: inset 0 1px 0 0 #dcecfb;
+    background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #ab88d2 100%);
+    border: 1px solid #84bbf3;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #528ecc;
+  }
+  

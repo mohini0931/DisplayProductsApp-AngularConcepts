@@ -1,0 +1,20 @@
+<div class="registerClass" [formGroup]="registerForm">
+    <div class="emailClass">
+        <label for="email">Email: </label>
+        <input id="email" type="email" formControlName="email" />
+       
+      </div>
+     
+    <div>
+      <label for="username">Username: </label>
+      <input id="username" type="text" formControlName="username" />
+
+    </div>
+  
+    <div>
+      <label for="password">Password: </label>
+      <input id="password" type="password" formControlName="password" />
+    </div>
+    <button (click)="registerUser()" [disabled]="!registerForm.valid">Register</button>
+  </div>
+  

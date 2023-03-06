@@ -1,16 +1,19 @@
 <div class="mainContainer">
   <nav class="container">
     <ul class="menu">
-      <li>
+      <li list-group-item>
         <img (click)="openMenu()" class="iconClass" src="../../assets/icons8-menu-squared-50.png" />
       </li>
       <li class="submenu" *ngIf="menuFlag">
         <ul>
-          <li>
+          <li *ngIf="!loginFlag">
             <a [routerLink]="['/register']"  routerLinkActive="activebutton">Register</a>
           </li>
-          <li>
+          <li *ngIf="!loginFlag">
             <a [routerLink]="['/login']"  routerLinkActive="activebutton">Login</a>
+          </li>
+          <li *ngIf="loginFlag">
+            <a [routerLink]="['/logout']"  routerLinkActive="activebutton">Logout</a>
           </li>
         </ul>
       </li>

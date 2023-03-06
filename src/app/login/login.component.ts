@@ -3,6 +3,9 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
 import { User } from '../models/user';
 import { LoginService } from '../service/login.service';
+import { BehaviorSubject } from "rxjs";
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { AlertPopUpComponent } from '../shared-components/alert-pop-up/alert-pop-up.component';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +23,8 @@ export class LoginComponent implements OnInit{
   });
 
   constructor(private loginService: LoginService,
-    private router: Router){}
+    private router: Router,
+    private dialog: MatDialog){}
 
   ngOnInit(){
     this.loginService.getUserDetails().subscribe(data => {
@@ -39,7 +43,12 @@ export class LoginComponent implements OnInit{
     }
     console.log("userexist="+this.userExist);
     if(this.userExist && this.userExist !== '') {
-      alert("Logged In Successfully");
+      this.loginService.setLoginEvent(true);
+      const dialogConfig = new MatDialogConfig();
+      dialogConfig.disableClose = true;
+      dialogConfig.autoFocus = true;
+      dialogConfig.data = { message: 'Logged In Successfully' };
+      const dialogRef = this.dialog.open(AlertPopUpComponent, dialogConfig);
       this.router.navigate(['/products']);
     }else{
       alert("Invalid Credentials");

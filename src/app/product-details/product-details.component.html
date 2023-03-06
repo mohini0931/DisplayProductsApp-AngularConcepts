@@ -1,0 +1,23 @@
+<div class="container-fluid" style="background: rgb(219, 198, 223);">
+  <h1>Card Details</h1>
+  <ul class="list-group">
+    <label class="form-label"> Card Name: </label>
+    <li class="list-group-item">{{ card.title }}</li>
+    <label class="form-label"> Card Number: </label>
+    <li class="list-group-item">{{ card.cardNumber }}</li>
+    <label class="form-label"> Card Limit: </label>
+    <li class="list-group-item">{{ card.cardLimit}}
+        <span>{{card.currency}}</span>
+    </li>
+    <label class="form-label">Terms & Conditions</label>
+    <li class="list-group-item customClass">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      recusandae, ullam commodi nisi minus dolore reiciendis,
+      ullam commodi nisi minus dolore reiciendis 
+      aliquid est ut repellat voluptatum!
+    </p>
+    </li>
+      <button class="btn btn-info" (click)="applyCard(card)">Apply</button>
+  </ul>
+</div>
+

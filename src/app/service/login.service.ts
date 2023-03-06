@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
-import { catchError, Observable, throwError } from 'rxjs';
+import { catchError, Observable, throwError, BehaviorSubject } from 'rxjs';
 import { User } from '../models/user';
 
 @Injectable({
@@ -9,6 +9,9 @@ import { User } from '../models/user';
 
 export class LoginService {
   
+  loginFlagSub = new BehaviorSubject(0);
+  loginFlag = this.loginFlagSub.asObservable();
+
     httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json'
@@ -26,6 +29,22 @@ export class LoginService {
 
    getUserDetails(){
       return this.http.get<User>(this.mainUrl + 'loginDetails');
+   }
+
+   getCardDetails() {
+    return this.http.get<any>(this.mainUrl + 'products');
+   }
+
+   setLoginEvent(val:boolean) {
+      if(val === true){
+        this.loginFlagSub.next(1);
+      }
+      else {
+        this.loginFlagSub.next(0);
+      }
+   }
+   getLoginEvent() {
+      return this.loginFlag;
    }
 
    private handleError(error: HttpErrorResponse) {

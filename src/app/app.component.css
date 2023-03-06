@@ -1,16 +1,18 @@
 .mainContainer {
-    background: rgb(219, 198, 223);
+  background: rgb(219, 198, 223);
     /* height: 50rem;
     width: 50rem; */
-    height: 100vh;
-    border: 2px solid black;
+    /* height: 106vh; */
+    border: 2px solid #b5a6a6;;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-size: 2rem !important;
+    height: 100vh;
   }
   .container {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    max-width: inherit;
   }
   .menu {
     background: rgb(163, 156, 222);

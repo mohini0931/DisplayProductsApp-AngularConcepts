@@ -1,1 +1,13 @@
-<p>products works!</p>
+ 
+    <ngb-carousel (slide)="onSlide($event)">
+      <ng-template ngbSlide *ngFor="let card of productsDetails">
+        <div class="wrapper">
+          <img [src]="'../../assets/' + card.imgUrl" class="imgThumbnail" (click)="getProductDetails(card)">
+        </div>
+        <div class="carousel-caption" style="margin-bottom: -3rem;">
+          <h3 style="color: black; font-size: 3rem;">{{ card.title }}</h3>
+          <p style="color: black; font-size: 3rem;">{{ card.cardNumber }}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <app-product-details *ngIf="displayProdDetails" [card]="selectedCard"></app-product-details>

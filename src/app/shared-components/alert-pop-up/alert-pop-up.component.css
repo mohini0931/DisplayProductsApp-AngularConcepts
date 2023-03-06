@@ -1,0 +1,20 @@
+.alertClass {
+    background-color: #ccb3cc;
+    padding: 4rem;
+}
+.alertClass h2 {
+    font-size: 3rem;
+}
+.alertClass mat-dialog-content {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.alertClass button {
+    padding: 1rem;
+    margin: 2rem;
+    width: 25vw;
+    border-radius: 20px;
+    font-size: 3vw;
+    background: rgb(163, 156, 222);
+}

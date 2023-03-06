@@ -1,0 +1,32 @@
+.container-fluid h1{
+    font-size: 3rem;
+    font-weight:bolder;
+    color: #4c4141;
+    font-family: sans-serif;
+}
+.container-fluid ul{
+    display: flex;
+}
+.container-fluid li {
+    background: rgb(163, 156, 222);
+    color: white;
+    font-size: 2.4rem;
+}
+.container-fluid p {
+    color: white
+}
+.container-fluid label {
+    font-weight: bolder;
+}
+.container-fluid button {
+    align-self: center;
+    width: 200px;
+    /* color: white; */
+    background: rgb(163, 156, 222);
+    /* font-weight: bolder; */
+    font-size: 3rem;
+    border-radius: 21px;
+    border: 1px solid;
+    box-shadow: 18px;
+    margin-top: 1rem;
+}

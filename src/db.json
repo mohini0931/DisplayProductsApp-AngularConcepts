@@ -1,0 +1,70 @@
+{
+  "loginDetails": [
+    {
+      "id": 1,
+      "email": "m@g.com",
+      "username": "mohinin",
+      "password": "mohini"
+    },
+    {
+      "id": 2,
+      "email": "mnarwade0931@gmail.com",
+      "username": "mohini1",
+      "password": "mohini1"
+    },
+    {
+      "id": 3,
+      "email": "mnarwade2015@gmail.com",
+      "username": "mohini2",
+      "password": "mohini2"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "type": "creditCard",
+      "title": "Flexi Visa Card",
+      "imgUrl": "./../../src/assets/credit-card.png",
+      "cardNumber": "123456789",
+      "cardLimit": 50000,
+      "currency": "AED"
+    },
+    {
+      "id": 102,
+      "type": "creditCard",
+      "title": "Etihad Credit Card",
+      "imgUrl": "../../src/assets/credit-card.png",
+      "cardNumber": "123456789",
+      "cardLimit": 50000,
+      "currency": "AED"
+    },
+    {
+      "id": 103,
+      "type": "creditCard",
+      "title": "Webshopper Card",
+      "imgUrl": "./../../src/assets/credit-card.png",
+      "cardNumber": "123456789",
+      "cardLimit": 50000,
+      "currency": "AED"
+    },
+    {
+      "id": 104,
+      "type": "creditCard",
+      "title": "DNATA Platinum Card",
+      "imgUrl": "./../../src/assets/credit-card.png",
+      "cardNumber": "123456789",
+      "cardLimit": 50000,
+      "currency": "AED"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,9 @@
+.imgThumbnail {
+    padding: 11rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+    max-width: 100%;
+}
+.imgThumbnail:hover{
+    cursor: pointer;
+}
